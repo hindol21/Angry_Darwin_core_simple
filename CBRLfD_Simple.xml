@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Problem>
+	<Feature>
+		<Value> Level </Value>
+		<Definition> Current game level </Definition>
+        <Type> int </Type>
+		<Metric> Equal </Metric>
+		<Variable1> n/a </Variable1>
+		<Variable2> n/a </Variable2>
+		<Weight> 0.0333 </Weight>		
+	</Feature>
+	<Feature>
+		<Value> Round </Value>
+		<Definition> x-th round of current level </Definition>
+        <Type> int </Type>
+		<Metric> MaxValue </Metric>
+		<Variable1> 3 </Variable1>
+		<Variable2> n/a </Variable2>
+		<Weight> 0.0012 </Weight>
+	</Feature>
+	<Feature>
+		<Value> Enemy </Value>
+		<Definition> remaining number of enemies </Definition>
+        <Type> int </Type>
+		<Metric> MaxValue </Metric>
+		<Variable1> 2 </Variable1>
+		<Variable2> n/a </Variable2>
+		<Weight> 0.0520 </Weight>
+	</Feature>
+	<Feature>
+		<Value> EnemyLocation </Value>
+		<Definition> Array of (x, y) enemy locations in float </Definition>
+        <Type> vector:float </Type>
+		<Metric> MinVectorAvg </Metric>
+		<Variable1> 40000 </Variable1>
+		<Variable2> n/a </Variable2>
+		<Weight> 0.4500 </Weight>
+	</Feature>
+	<Feature>
+		<Value> Score </Value>
+		<Definition> Score obtained from current round </Definition>
+        <Type> int </Type>
+		<Metric> MinValue </Metric>
+		<Variable1> 200 </Variable1>
+		<Variable2> n/a </Variable2>
+		<Weight> 0.4635 </Weight>
+	</Feature>
+</Problem>
+<Solution>
+	<Feature>
+		<Value> xTouch </Value>
+		<Definition> x-th round of current level </Definition>
+        <Type> int </Type>
+		<Metric> Interpolate </Metric>
+		<Variable1> n/a </Variable1>
+		<Variable2> n/a </Variable2>
+		<Weight> n/a </Weight>
+	</Feature>
+	<Feature>
+		<Value> yTouch </Value>
+		<Definition> x-th round of current level </Definition>
+        <Type> int </Type>
+		<Metric> Interpolate </Metric>
+		<Variable1> n/a </Variable1>
+		<Variable2> n/a </Variable2>
+		<Weight> n/a </Weight>
+	</Feature>
+	<Feature>
+		<Value> behavior </Value>
+		<Definition> Behavior/emotion group that defines the verbal-gestural behavior combination </Definition>
+        <Type> string </Type>
+		<Metric> Equal </Metric>
+		<Variable1> n/a </Variable1>
+		<Variable2> n/a </Variable2>
+		<Weight> n/a </Weight>
+	</Feature>
+</Solution>
+	
