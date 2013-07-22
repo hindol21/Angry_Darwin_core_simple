@@ -12,8 +12,8 @@
  *
  *  Abstract:
  *  ---------
- *  Angry Darwin, presents a case-based reasoning (CBR) approach to robot learning
- *  from human demonstration. The application domain of the proposed algorithm is a turn-based
+ *  Angry Darwin, presents a case-based reasoning approach to robot learning from human 
+ *  demonstration (CBR-LfD). The application domain of the proposed algorithm is a turn-based
  *  interaction between human and robot on a shared tablet workspace. We find that a CBR
  *  approach to this problem, retrieving what has been observed in the past and reusing existing
  *  behaviors to respond to the current problem, generates reliable interaction behaviors. The
